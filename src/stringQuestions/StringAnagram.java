@@ -13,8 +13,8 @@ public class StringAnagram {
 
 	public static boolean checkAnagram(String s1, String s2) {
 		
-		char[]c1 = s1.toCharArray();
-		char[]c2 = s2.toCharArray();
+		char[]c1 = s1.toLowerCase().toCharArray();
+		char[]c2 = s2.toLowerCase().toCharArray();
 		
 		Arrays.sort(c1);
 		Arrays.sort(c2);

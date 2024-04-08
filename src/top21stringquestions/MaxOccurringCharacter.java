@@ -16,7 +16,7 @@ public class MaxOccurringCharacter {
         }
 
        
-        char maxChar = '\0';
+        char maxChar = ' ';
         int maxFrequency = 0;
         
         for (int i = 0; i < 256; i++) {

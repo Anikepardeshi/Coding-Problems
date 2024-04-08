@@ -17,11 +17,11 @@ public class CountCharacter {
 
 			while (i < ch.length && ch[i] != ' ') {
 
-				s = s+ ch[i];
+				s = s + ch[i];
 				i++;
 			}
-			if(s.length() > 0) {
-				System.out.println(s+" -> "+s.length());
+			if (s.length() > 0) {
+				System.out.println(s + " -> " + s.length());
 			}
 		}
 
