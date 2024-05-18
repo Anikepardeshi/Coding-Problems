@@ -4,6 +4,8 @@ import java.util.*;
 
 public class HashMapImpl {
 	public static void main(String args[]) {
+		
+		//O(1) time complexity
 	       //Creation
 	       HashMap<String, Integer> map = new HashMap<>();
 
@@ -12,11 +14,16 @@ public class HashMapImpl {
 	       map.put("India", 120);
 	       map.put("US", 30);
 	       map.put("China", 150);
+	       map.put("Canada", 44);
 
-	       System.out.println(map);
+	       //HashMap is a unordered 
+	       System.out.println("Elements : " + map);
+	       
+	       System.out.println("Size of HashMap is : "+ map.size());
 
+	       //value gets updated 
 	       map.put("China", 180);
-	       System.out.println(map);
+	       System.out.println("Elements : " + map);
 
 	       //Searching
 	       if(map.containsKey("Indonesia")) {
@@ -36,7 +43,8 @@ public class HashMapImpl {
 	       }
 
 
-	       //Iteration (2)
+	       //Iteration (2) for keys
+	       System.out.println("Another way to access keys ");
 	       Set<String> keys = map.keySet();
 	       for(String key : keys) {
 	           System.out.println(key+ " : " + map.get(key));

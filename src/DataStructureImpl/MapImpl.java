@@ -2,6 +2,7 @@ package DataStructureImpl;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapImpl {
     public static void main(String[] args) {
@@ -27,6 +28,12 @@ public class MapImpl {
         for (Map.Entry<String, Integer> entry : myMap.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
+        
+        Set<String> keys = myMap.keySet();
+        System.out.println("Another way to access keys ");
+	       for(String key : keys) {
+	           System.out.println(key+ " : " + myMap.get(key));
+	       }
 
         System.out.println();
         System.out.println("Does key 'Bob' exist? " + myMap.containsKey("Bob"));

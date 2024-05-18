@@ -14,7 +14,6 @@ public class MaxOccurringCharacter {
             char ch = str.charAt(i);
             frequency[ch]++;
         }
-
        
         char maxChar = ' ';
         int maxFrequency = 0;

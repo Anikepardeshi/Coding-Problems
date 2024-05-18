@@ -25,6 +25,7 @@ public class HashSetImpl {
 		}
 		
 		set.remove(1);
+		
 		if(!set.contains(1)) {
 			System.out.println("Absent");
 		}
@@ -33,7 +34,9 @@ public class HashSetImpl {
 		
 		set.add(0);
 		
+		@SuppressWarnings("rawtypes")
 		Iterator it = set.iterator();
+		
 		while(it.hasNext()) {
 			System.out.print(it.next()+",");
 		}
