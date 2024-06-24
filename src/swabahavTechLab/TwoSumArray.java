@@ -24,7 +24,7 @@ public class TwoSumArray {
 		TwoSumArray solution = new TwoSumArray();
         
         int[] nums1 = {2, 7, 11, 15};
-        int target1 = 9;
+        int target1 = 13;
         int[] result1 = solution.twoSum(nums1,target1);
         System.out.println("Indices : " + result1[0]+","+result1[1]);
         

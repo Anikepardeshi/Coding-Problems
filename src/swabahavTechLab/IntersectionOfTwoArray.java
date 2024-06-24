@@ -137,7 +137,7 @@ public class IntersectionOfTwoArray {
 		for (int num : result1) {
 			System.out.print(num + " ");
 		}
-		System.out.println(); // Output: [2, 2]
+		System.out.println(); // Output: [2]
 
 		int[] nums3 = { 4, 9, 5 };
 		int[] nums4 = { 9, 4, 9, 8, 4 };
