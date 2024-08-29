@@ -1,0 +1,31 @@
+package bank;
+
+//4. FixedDepositAccount.java (Inheritance and Polymorphism)
+//Purpose: 
+//- FixedDepositAccount is another subclass of Account, representing a fixed deposit account
+//  with its own interest calculation.
+//  
+//Inheritance: 
+//- Similar to SavingsAccount, FixedDepositAccount inherits from Account but provides a 
+//  specific implementation for calculateInterest(). This allows us to treat it as a 
+//  specialized type of account.
+//Polymorphism: 
+//- Since FixedDepositAccount extends Account, it can be used wherever an Account type is 
+//  expected. This is a demonstration of polymorphism, where different subclasses 
+//  (SavingsAccount, FixedDepositAccount) can be treated as instances of the parent class (Account)
+//  and behave according to their own implementations.
+public class FixedDepositAccount extends Account {
+    private double interestRate;
+
+    public FixedDepositAccount(String accountNumber, double initialBalance, AccountHolder accountHolder, double interestRate) {
+        super(accountNumber, initialBalance, accountHolder);
+        this.interestRate = interestRate;
+    }
+
+    @Override
+    public void calculateInterest() {
+        double interest = balance * interestRate / 100;
+        balance += interest;
+        transactions.add(new Transaction("Interest", interest, balance));
+    }
+}

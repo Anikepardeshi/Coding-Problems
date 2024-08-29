@@ -1,0 +1,27 @@
+package bank;
+
+//2. BankAccount.java (Encapsulation)
+//Purpose: 
+//- BankAccount is a concrete class that extends Account. 
+//- It represents a regular bank account with no interest calculation.
+//
+//Encapsulation: 
+//- The class encapsulates the data (accountNumber, balance) 
+//  and provides controlled access to it through methods like deposit and withdraw. 
+//- ensuring Direct access to the balance is restricted,that any changes to it are 
+//  made through these methods, maintaining data integrity.
+
+public class BankAccount extends Account{
+	
+	String type = "Regular";
+	
+	public BankAccount(String accountNumber, double initialBalance) {
+		super(accountNumber,initialBalance);
+	}
+	
+	@Override
+	public void calculateInterest() {
+	//	System.out.println("No interest for regular bank account");
+	}
+
+}
